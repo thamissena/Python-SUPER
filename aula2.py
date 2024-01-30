@@ -63,3 +63,17 @@ print('Terceira equipe: ', posicao3)
 for equipe, media in classificacao:
     lugar += 1
     print(f'{equipe} - {media} - {lugar}º lugar')"""
+
+"""Métodos para manipulação de lista:
+    -Adição de itens : .append() - Adicionar um elemento ao final da lista.
+    -Adição de itens: .insert() - Adicionar um elemento na posição informada.
+    -Remoção de itens: .remove() - Remover um elemento de uma lista através de seu índice.
+    -Remoção de itens: .pop() - Remover um elemento de uma lista através de seu valor."""
+
+
+
+
+
+
+
+
