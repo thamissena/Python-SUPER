@@ -58,8 +58,18 @@ def cadCategorias():
         if opcao.upper() == 'R':break
         eval(menu[opcao][1]) #transforma uma string em inteiro, ou transforma uma string em comando
 
+#não terminamos 
 def alterarCat():
-    pass
+    codigo = int(input("Digite o Código da Categoria:"))
+    novaDescricao = input("Digite NOVA descrição").strip().upper()
+    conexao = abrirBanco ()
+    cursor = conexao.cursor ()
+    cursor.execute(comandoSQL[5],(novaDescricao,codigo) )
+    conexao.commit()
+    
+
+
+
 def excluirCat():
     pass
 
