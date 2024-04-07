@@ -14,7 +14,11 @@ def criarTabelas (conexao):
     cursor.execute(comandoSQL[1])
 
 def incluirCat():
-    print("Função de Inclusão de Categorias!!!")
+    descricao = input("Informe a Descrição da Nova Categoria: ").upper().strip()
+    conexao = abrirBanco ()
+    cursor = conexao.cursor ()
+    cursor.execute(comandoSQL[2], (descricao,))
+    conexao.commit()
     
 def incluirProd():
     print("Função de Inclusão de Produtos!!!")    
