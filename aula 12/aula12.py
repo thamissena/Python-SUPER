@@ -1,3 +1,4 @@
+ #ATIVIDADE 5:
 class Animal:
     def fazerSom (self):
         pass
@@ -28,9 +29,9 @@ for animal in animais:
     print(animal.__class__.__name__, "faz", fazerAnimalFalar(animal))
     
 exit()
-
-
-#Polimorfismo:
+#------------------------------------------------
+# DESAFIO PRÁTICO:
+#Herança e Polimorfismo:
 class ContasCorrentes:
     def __init__(self, numero, correntista):
         self.numero = numero
@@ -49,9 +50,7 @@ class ContasCorrentes:
         else:
           print ("Saldo depositado negativo.")
 # Para ter um Setter precisa de um Getter, mas podemos fazer um Getter sem o Setter.   
-
-#--------------
-
+#####################################################
 minhaConta = ContasCorrentes("12345-0","Vinicius Costas")
 print(f"Número da conta: {minhaConta.numero}") 
 print(minhaConta.movimentar)  #Getter -> 0 
@@ -63,11 +62,10 @@ print (minhaConta.movimentar)  #Getter - > - 100 (não pode)
 minhaConta.movimentar = 100  #Setter
 
 print (minhaConta.movimentar)  #Getter - > 100 
-
-
+#------------------------------------------------
 
 exit() #Desativa o programa abaixo 
-
+#ATIVIDADE 4:
 class Motores:
     def funcionar(self):
         return f"Motor ligado!!"
